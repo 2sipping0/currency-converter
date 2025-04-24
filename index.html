@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currency Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="converter">
+    <h1>Currency Converter</h1>
+    <div class="input-group">
+      <input type="number" id="amount" placeholder="Enter amount" />
+    </div>
+    <div class="select-group">
+      <select id="fromCurrency" class="currency-select"></select>
+      <button id="reverseBtn" title="Reverse Currencies">⇄</button>
+      <select id="toCurrency" class="currency-select"></select>
+    </div>
+    <div class="date-group">
+      <label for="rateDate">Date:</label>
+      <input type="date" id="rateDate" />
+    </div>
+    <button id="convertBtn">Convert</button>
+    <div id="result"></div>
+    <div class="loader" id="loader"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
